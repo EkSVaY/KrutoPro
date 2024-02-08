@@ -28,3 +28,13 @@ def star(x, y, a, color):
         turtle.fd(a)
         turtle.right(144)
     turtle.end_fill()
+
+def circle(x, y, r, color):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.color(color)
+    turtle.begin_fill()
+    turtle.circle(r)
+    turtle.end_fill()
+    turtle.up()
