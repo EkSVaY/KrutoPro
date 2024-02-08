@@ -73,24 +73,17 @@ def square(x, y, a, color):
 
 
 
-def paral(x, y, a, b, v, color):
+def paral(x, y, a, b, r1, r2, color):
     turtle.setposition(x, y)
     turtle.fillcolor(color)
     turtle.pencolor('white')
     turtle.pensize(2)
     turtle.begin_fill()
-    if v == 1:
-        for i in range(2):
-            turtle.forward(a)
-            turtle.left(130)
-            turtle.forward(b)
-            turtle.left(50)
-    elif v == 2:
-        for i in range(2):
-            turtle.forward(a)
-            turtle.left(45)
-            turtle.forward(b)
-            turtle.left(135)
+    for i in range(2):
+        turtle.forward(a)
+        turtle.left(r1)
+        turtle.forward(b)
+        turtle.left(r2)
     turtle.end_fill()
 
 
