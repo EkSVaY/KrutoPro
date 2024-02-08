@@ -54,3 +54,20 @@ def rectangle(x, y, a, b, color):
     turtle.forward(b)
     turtle.right(90)
     turtle.end_fill()
+
+
+def square(x, y, a, color):
+    turtle.color(color)
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.begin_fill()
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.forward(a)
+    turtle.right(90)
+    turtle.end_fill()
