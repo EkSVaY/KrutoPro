@@ -92,3 +92,21 @@ def paral(x, y, a, b, v, color):
             turtle.forward(b)
             turtle.left(135)
     turtle.end_fill()
+
+
+
+def trap(x, y, a, b, c, r1, r2, color):
+    turtle.setposition(x, y)
+    turtle.fillcolor(color)
+    turtle.pencolor('white')
+    turtle.pensize(2)
+    turtle.begin_fill()
+    turtle.forward(a)
+    turtle.left(130)
+    turtle.forward(b)
+    turtle.left(50)
+    turtle.forward(c)
+    turtle.left(50)
+    turtle.forward(b)
+    turtle.left(130)
+    turtle.end_fill()
