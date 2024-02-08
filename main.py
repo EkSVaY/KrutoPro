@@ -17,15 +17,3 @@ def triangle(x, y, a, color):
     turtle.up()
     turtle.home()
 
-def picture_1(x1, y1):
-    turtle.speed(100)
-    turtle.left(45)
-    triangle(x1 + 0, y1,100, "red")
-    turtle.left(135)
-    triangle(x1,y1 + 0,100, "yellow")
-    turtle.left(225)
-    triangle(x1 + 0, y1,50, "green")
-    turtle.left(90)
-    triangle(x1 + 50*2**0.5, y1 -50*2**0.5 ,70, "blue")
-picture_1(0, 0)
-turtle.done()
