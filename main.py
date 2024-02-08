@@ -55,7 +55,6 @@ def rectangle(x, y, a, b, color):
     turtle.right(90)
     turtle.end_fill()
 
-
 def square(x, y, a, color):
     turtle.color(color)
     turtle.up()
@@ -73,15 +72,23 @@ def square(x, y, a, color):
     turtle.end_fill()
 
 
-def paral(x, y, a, b, color):
+
+def paral(x, y, a, b, v, color):
     turtle.setposition(x, y)
     turtle.fillcolor(color)
     turtle.pencolor('white')
     turtle.pensize(2)
     turtle.begin_fill()
-    for i in range(2):
-        turtle.forward(a)
-        turtle.left(130)
-        turtle.forward(b)
-        turtle.left(50)
+    if v == 1:
+        for i in range(2):
+            turtle.forward(a)
+            turtle.left(130)
+            turtle.forward(b)
+            turtle.left(50)
+    elif v == 2:
+        for i in range(2):
+            turtle.forward(a)
+            turtle.left(45)
+            turtle.forward(b)
+            turtle.left(135)
     turtle.end_fill()
