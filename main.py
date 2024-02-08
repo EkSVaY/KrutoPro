@@ -17,3 +17,14 @@ def triangle(x, y, a, color):
     turtle.up()
     turtle.home()
 
+def star(x, y, a, color):
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
+    turtle.color(color)
+    turtle.pensize(2)
+    turtle.begin_fill()
+    for i in range(0,5):
+        turtle.fd(a)
+        turtle.right(144)
+    turtle.end_fill()
