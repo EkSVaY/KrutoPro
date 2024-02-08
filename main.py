@@ -74,8 +74,10 @@ def square(x, y, a, color):
 
 
 def paral(x, y, a, b, r1, r2, color):
-    turtle.setposition(x, y)
     turtle.fillcolor(color)
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
     turtle.pencolor('white')
     turtle.pensize(2)
     turtle.begin_fill()
@@ -89,8 +91,10 @@ def paral(x, y, a, b, r1, r2, color):
 
 
 def trap(x, y, a, b, c, r1, r2, color):
-    turtle.setposition(x, y)
     turtle.fillcolor(color)
+    turtle.up()
+    turtle.setposition(x, y)
+    turtle.down()
     turtle.pencolor('white')
     turtle.pensize(2)
     turtle.begin_fill()
