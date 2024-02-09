@@ -162,6 +162,43 @@ def picture_1(x1, y1):
     turtle.right(45)
     triangle(x1 + 49*2**0.5, y1 + 49*2**0.5, 102, "purple")
 
+
+def bird(x, y):
+    turtle.speed(100)
+    turtle.right(135)
+    triangle(x + 0, y+ 0, 65, 'red')
+    turtle.left(45)
+    triangle(x+ 0, y + 0, 85, 'green')
+    turtle.right(25)
+    triangle(x + 57, y + 57, 55, 'blue')
+    circle(x - 78, y + 37, 20, 'brown')
+    turtle.left(145)
+    triangle(x-78, y + 37, 25, 'purple')
+    circle(x - 82, y + 60, 3, 'white')
+    turtle.left(270)
+    triangle(x - 10, y + 89, 50, 'orange')
+
+def people(x, y):
+    turtle.speed(100)
+    turtle.right(225)
+    square(x+0, y+0, 50, 'green')
+    turtle.left(180)
+    triangle(x-0.5, y-0.5, 85, 'blue')
+    turtle.right(90)
+    triangle(x+0.5, y-0.5, 85, 'red')
+    turtle.right(90)
+    turtle.right(60)
+    paral(x-0.5, y-85.5, 65, 55, 50, 130, 'orange')
+    turtle.left(75)
+    paral(x+0.5, y-85.5, 55, 65, 50, 130, 'brown')
+    turtle.left(145)
+    triangle(x-80, y-218, 50, 'red')
+    turtle.left(15)
+    triangle(x+86, y-214, 50, 'red')
+
+
 tank(50, 200)
 picture_1(0, 0)
+bird(300, -300)
+people(-300,50)
 turtle.done()
