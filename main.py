@@ -199,7 +199,7 @@ def people(x, y):
 def vertolet(x, y):
     turtle.tracer(0)
     turtle.right(45)
-    triangle(x + 0,y + 0,100*(21/2),'blue')
+    triangle(x + 0,y + 0,100*(2**1/2),'blue')
     turtle.right(225)
     triangle(x + 143,y + 0,100*(2**1/2),'blue')
     turtle.right(135)
