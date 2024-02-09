@@ -189,12 +189,13 @@ def people(x, y):
     turtle.right(90)
     turtle.right(60)
     paral(x-0.5, y-85.5, 65, 55, 50, 130, 'orange')
-    turtle.left(75)
+    turtle.left(275)
     paral(x+0.5, y-85.5, 55, 65, 50, 130, 'brown')
-    turtle.left(145)
+    turtle.left(70)
     triangle(x-80, y-218, 50, 'red')
-    turtle.left(15)
+    turtle.left(35)
     triangle(x+86, y-214, 50, 'red')
+
 
 
 tank(50, 200)
