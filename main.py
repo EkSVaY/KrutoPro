@@ -207,7 +207,6 @@ def vertolet(x, y):
     star(x - 50,y - 12,25,'red')
 
 def lodka(x, y):
-    turtle.tracer(0)
     turtle.right(45)
     trap(x + 0, y + 0, 50,50,50,30,30,'brown')
     turtle.right(210)
@@ -224,7 +223,6 @@ def lodka(x, y):
     turtle.home()
 
 def parovoz(x, y):
-    turtle.tracer(0)
     rectangle(x + 0, y + 0, 150,70,'red')
     circle(x + 150, y - 70, 35, 'red')
     rectangle(x + 115, y + 30, 40 , 30, 'gray')
