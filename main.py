@@ -238,7 +238,6 @@ def parovoz(x, y):
     turtle.home()
 
 def fish(x, y):
-    turtle.tracer(2)
     turtle.width(4)
     turtle.right(45)
     square(x + 0,y + 0, 50, 'red')
@@ -255,7 +254,6 @@ def fish(x, y):
     triangle(x + 87,y -35,70,'pink')
 
 def rocket(x1, y1):
-    turtle.tracer(2)
     turtle.right(135)
     triangle(x1+0,y1+100,50,'green')
     turtle.left(135)
