@@ -28,7 +28,6 @@ def star(x, y, a, color):
         turtle.fd(a)
         turtle.right(144)
     turtle.end_fill()
-    turtle.up()
 
 def circle(x, y, r, color):
     turtle.up()
@@ -57,10 +56,8 @@ def rectangle(x, y, a, b, color):
     turtle.end_fill()
 
 def square(x, y, a, color):
-    turtle.fillcolor(color)
+    turtle.color(color)
     turtle.up()
-    turtle.pencolor("white")
-    turtle.pensize(2)
     turtle.setposition(x, y)
     turtle.down()
     turtle.begin_fill()
@@ -73,18 +70,16 @@ def square(x, y, a, color):
     turtle.forward(a)
     turtle.right(90)
     turtle.end_fill()
-    turtle.up()
-    turtle.home()
 
 
 
 def paral(x, y, a, b, r1, r2, color):
+    turtle.fillcolor(color)
     turtle.up()
     turtle.setposition(x, y)
     turtle.down()
-    turtle.fillcolor(color)
+    turtle.pencolor('white')
     turtle.pensize(2)
-    turtle.pencolor("white")
     turtle.begin_fill()
     for i in range(2):
         turtle.forward(a)
@@ -92,7 +87,6 @@ def paral(x, y, a, b, r1, r2, color):
         turtle.forward(b)
         turtle.left(r2)
     turtle.end_fill()
-    turtle.up()
 
 
 
@@ -113,47 +107,3 @@ def trap(x, y, a, b, c, r1, r2, color):
     turtle.forward(b)
     turtle.left(r1)
     turtle.end_fill()
-
-def tank(x, y):
-    turtle.speed(100)
-    circle(x + 0, y + 80, 38, "black")
-    rectangle(x - 95, y + 130, 150, 80, "green")
-    turtle.left(90)
-    triangle(x -125, y + 0, 50, "green")
-    rectangle(x + 77, y + 70, 30, 40, "black")
-    rectangle(x + 78, y + 69, 28, 38, "green")
-    rectangle(x - 126, y + 51, 202, 53, "black")
-    rectangle(x -125, y + 50, 200, 50, "green")
-    circle(x -100,y + 0, 23, "black")
-    circle(x -50, y + 0, 23, "black")
-    circle(x + 0, y + 0, 23, "black")
-    circle(x + 50, y + 0, 23, "black")
-    circle(x -100, y + 18, 5, "grey")
-    circle(x -50, y + 18, 5, "grey")
-    circle(x + 0, y + 18, 5, "grey")
-    circle(x + 50, y + 18, 5, "grey")
-    rectangle(x -190, y + 110, 100, 20, "green")
-    rectangle(x -190, y + 110, 10, 20, "gray")
-    rectangle(x -105, y + 80, 10, 5, "gray")
-    circle(x + 0, y + 80, 35, "green")
-    star(x -20, y + 100, 40, "red")
-    turtle.left(225)
-    triangle(x -210, y + 35, 50, "gray")
-    turtle.up()
-    turtle.home()
-
-def picture_1(x1, y1):
-    turtle.speed(100)
-    turtle.left(45)
-    triangle(x1 + 0, y1,200, "red")
-    turtle.left(135)
-    triangle(x1,y1 + 0,200, "yellow")
-    turtle.left(225)
-    triangle(x1 + 0, y1,100, "pink")
-    turtle.left(90)
-    triangle(x1 + 100*2**0.5, y1 - 100*2**0.5,144, "blue")
-    paral(x1 -100*2**0.5, y1 - 100*2**0.5,200*(2**0.5)-145, 100, 45, 135,"green")
-    turtle.left(45)
-    square(x1 + 0, y1+ 0,98,"orange")
-    turtle.right(45)
-    triangle(x1 + 49*2**0.5, y1 + 49*2**0.5, 102, "purple")
