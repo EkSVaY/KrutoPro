@@ -170,7 +170,7 @@ def bird(x, y):
     turtle.left(270)
     triangle(x - 10, y + 89, 50, 'orange')
 
-def people(x, y):
+def person(x, y):
     turtle.speed(100)
     turtle.right(225)
     square(x+0, y+0, 50, 'green')
@@ -189,7 +189,6 @@ def people(x, y):
     triangle(x+86, y-214, 50, 'red')
 
 def vertolet(x, y):
-    turtle.tracer(0)
     turtle.right(45)
     triangle(x + 0,y + 0,100*(2**1/2),'blue')
     turtle.right(225)
@@ -238,7 +237,6 @@ def parovoz(x, y):
     circle(x + 100, y - 130, 20, 'black')
     paral(x + 145, y - 120, 30, 30, 60,60,'gray')
     circle(x + 120, y - 100, 20, 'black')
-    turtle.up()
     turtle.home()
 
 
@@ -246,7 +244,7 @@ turtle.screensize(1920, 1080)
 tank(50, 200)
 picture_1(0, 0)
 bird(300, -300)
-people(-300,50)
+person(-300,50)
 vertolet(0,-300)
 lodka(200,225)
 parovoz(-350, -250)
