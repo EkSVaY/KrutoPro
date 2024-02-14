@@ -1,4 +1,6 @@
 import turtle
+
+
 def triangle(x, y, a, color):
     turtle.up()
     turtle.setposition(x, y)
@@ -10,12 +12,13 @@ def triangle(x, y, a, color):
     turtle.left(90)
     turtle.fd(a)
     turtle.right(135)
-    turtle.fd((2*a**2)**0.5)
+    turtle.fd((2 * a ** 2) ** 0.5)
     turtle.left(225)
     turtle.fd(a)
     turtle.end_fill()
     turtle.up()
     turtle.home()
+
 
 def star(x, y, a, color):
     turtle.up()
@@ -30,6 +33,7 @@ def star(x, y, a, color):
     turtle.end_fill()
     turtle.up()
 
+
 def circle(x, y, r, color):
     turtle.up()
     turtle.setposition(x, y)
@@ -39,6 +43,7 @@ def circle(x, y, r, color):
     turtle.circle(r)
     turtle.end_fill()
     turtle.up()
+
 
 def rectangle(x, y, a, b, color):
     turtle.color(color)
@@ -55,6 +60,7 @@ def rectangle(x, y, a, b, color):
     turtle.forward(b)
     turtle.right(90)
     turtle.end_fill()
+
 
 def square(x, y, a, color):
     turtle.fillcolor(color)
@@ -76,6 +82,7 @@ def square(x, y, a, color):
     turtle.up()
     turtle.home()
 
+
 def paral(x, y, a, b, r1, r2, color):
     turtle.fillcolor(color)
     turtle.up()
@@ -91,6 +98,7 @@ def paral(x, y, a, b, r1, r2, color):
         turtle.left(r2)
     turtle.end_fill()
     turtle.up()
+
 
 def trap(x, y, a, b, c, r1, r2, color):
     turtle.fillcolor(color)
@@ -109,6 +117,7 @@ def trap(x, y, a, b, c, r1, r2, color):
     turtle.forward(b)
     turtle.left(r1)
     turtle.end_fill()
+
 
 def tank(x, y):
     turtle.speed(100)
@@ -137,6 +146,7 @@ def tank(x, y):
     triangle(x -210, y + 35, 50, "gray")
     turtle.up()
     turtle.home()
+
 
 def picture_1(x1, y1):
     turtle.speed(100)
@@ -170,6 +180,7 @@ def bird(x, y):
     turtle.left(270)
     triangle(x - 10, y + 89, 50, 'orange')
 
+
 def person(x, y):
     turtle.speed(100)
     turtle.right(225)
@@ -187,6 +198,7 @@ def person(x, y):
     triangle(x-80, y-218, 50, 'red')
     turtle.left(15)
     triangle(x+86, y-214, 50, 'red')
+
 
 def vertolet(x, y):
     turtle.right(45)
@@ -206,6 +218,7 @@ def vertolet(x, y):
     turtle.right(0)
     star(x - 50,y - 12,25,'red')
 
+
 def lodka(x, y):
     turtle.right(45)
     trap(x + 0, y + 0, 50,50,50,30,30,'brown')
@@ -222,6 +235,7 @@ def lodka(x, y):
     turtle.up()
     turtle.home()
 
+
 def parovoz(x, y):
     rectangle(x + 0, y + 0, 150,70,'red')
     circle(x + 150, y - 70, 35, 'red')
@@ -236,6 +250,7 @@ def parovoz(x, y):
     paral(x + 145, y - 120, 30, 30, 60,60,'gray')
     circle(x + 120, y - 100, 20, 'black')
     turtle.home()
+
 
 def fish(x, y):
     turtle.width(4)
@@ -252,6 +267,7 @@ def fish(x, y):
     triangle(x - 84,y -84,50,'orange')
     turtle.right(225)
     triangle(x + 87,y -35,70,'pink')
+
 
 def rocket(x1, y1):
     turtle.right(135)
